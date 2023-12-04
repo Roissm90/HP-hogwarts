@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogwarts</title>
+  <link rel="stylesheet" href="reset.css"> 
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <a id="arriba" class="titulo" href="index.html">
+    <h1>HOGWARTS</h1>
+  </a>
+  
+  <div class="cuerpo">
+
+    <nav class="menu-principal">
+      <a href="fundadores.html">Fundadores</a>
+      <a href="casas.html">Casas</a>
+      <a href="profesorado.html">Cargos</a>
+      <a href="asignaturas.html">Asignaturas</a>
+      <a href="torneos.html">Torneos</a>
+      <a href="alumnos.html">Alumnos Destacados</a>
+      <a href="organizaciones.html">Organizaciones/Clubes</a>
+      <a href="zonas.html">Zonas</a>
+    </nav>
+
+    <div class="boton-menu-responsive">
+      <label for="boton-menu-responsive">
+        <div class="boton-menu-responsive-imagen">
+          <div class="escudo-secundario">
+            <img class="fotoescudo"
+              src="https://media.mykaramelli.com/galeria/articulos/decoracion-de-pared-escudo-hogwarts-61cm_12105_1.jpg"
+              alt="escudo de Hogwarts">
+          </div>
+        </div>
+        <input id="boton-menu-responsive" type="checkbox">
+          <div class="menu-responsive-mostrado">
+            <a href="fundadores.html">Fundadores</a>
+            <a href="casas.html">Casas</a>
+            <a href="profesorado.html">Cargos</a>
+            <a href="asignaturas.html">Asignaturas</a>
+            <a href="torneos.html">Torneos</a>
+            <a href="alumnos.html">Alumnos Destacados</a>
+            <a href="organizaciones.html">Organizaciones/Clubes</a>
+            <a href="zonas.html">Zonas</a>
+            <a href=""><img src="https://png.pngtree.com/png-clipart/20220216/ourlarge/pngtree-golden-arrow-element-pointing-up-png-image_4393224.png" alt=""></a>
+         </div>
+      </label>
+    </div>
+    
+    <div class="datos"><a name="datos"></a>
+
+      <h2>Consigue tu plaza</h2>
+
+      <form class="form">
+
+        <p>Primero facilítanos tus datos personales:</p>
+
+        <fieldset class="personales">
+          <label for="nombre">
+            <input id="nombre" type="text" placeholder="Nombre" required>
+          </label>
+          <label for="apellidos">
+            <input id="apellido1" type="text" placeholder="Apellidos" required>
+          </label>          
+          <label for="fecha">
+            <input id="fecha" type="date" min="2006-01-01" max="2012-12-31">
+          </label>
+          <label for="email">
+            <input id="email" type="email" placeholder="em@ail" required>
+          </label>
+          <label for="nacionalidad">
+            <input id="nacionalidad" type="text" placeholder="Nacionalidad" required>
+          </label>
+          <label for="tel">
+            <input id="tel" type="tel" name="tel" placeholder="Tlfno"required>
+          </label>
+          <label for="foto-perfil">
+            <input id="foto-perfil" type="file" name="foto-perfil"><br>
+          </label>
+          <div>
+            <span>¿Eres de sangre pura?</span>
+            <label for="si">
+              <input id="si" type="radio" name="si-no" value="si">Sí
+            </label>
+            <label for="no">
+              <input id="no" type="radio" name="si-no" value="no">No
+            </label>
+          </div>
+        </fieldset>
+
+        <p>Ahora háblanos de tus gustos y preferencias mágicas:</p>
+
+        <fieldset class="asignatura">
+          <p>¿Cuál es tu asignatura favorita?</p>
+          <label for="asignatura">
+            <select id="asignatura" name="asignatura" required>
+              <option value="">(elije uno)</option>
+              <option value="adivinacion">Adivinación</option>
+              <option value="aritmancia">Aritmancia</option>
+              <option value="oscuras">Artes Oscuras</option>
+              <option value="hcuidado">Cuidado de Criaturas Mágicas</option>
+              <option value="defensa">Defensa Contra Artes Oscuras</option>
+              <option value="encantamientos">Encantamientos</option>
+              <option value="muggles">Estudios muggles</option>
+              <option value="herbologia">Herbología</option>
+              <option value="historia">Historia de la Magia</option>
+              <option value="pociones">Pociones</option>
+              <option value="runas">Runas Antiguas</option>
+              <option value="transformaciones">Transformaciones</option>
+              <option value="vuelo">Vuelo</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="pasatiempo">
+          <p>¿Cuál es tu pasatiempo mágico favorito?</p>
+          <p>(puedes señalar varios)</p>
+          <label for="ajedrez">
+            <input id="ajedrez" type="checkbox" name="pasatiempo">Ajedrez Mágico
+          </label>
+          <label for="duelos">
+            <input id="duelos" type="checkbox" name="pasatiempo">Duelos Mágicos
+          </label>
+          <label for="gobstones">
+            <input id="gobstones" type="checkbox" name="pasatiempo">Gobstones
+          </label>
+          <label for="snap">
+            <input id="snap" type="checkbox" name="pasatiempo">Snap Explosivo
+          </label>
+          <label for="liga">
+            <input id="liga" type="checkbox" name="pasatiempo">Liga Quidditch
+          </label>
+        </fieldset>
+
+        <fieldset class="actividad">
+          <p>¿Que harías en un día libre? (puedes señalar varias)</p>
+          <div class="actividades">
+            <label for="tiendas">
+              <input id="tiendas" type="checkbox" name="actividad" value="tiendas">Ir a Hogsmeade de tiendas
+            </label>
+            <label for="tresescobas">
+              <input id="tresescobas" type="checkbox" name="actividad" value="tresescobas">Ir a Las Tres Escobas
+            </label>
+            <label for="terrenos">
+              <input id="terrenos" type="checkbox" name="actividad" value="terrenos">Pasear por los terrenos
+            </label>
+            <label for="deberes">
+              <input id="deberes" type="checkbox" name="actividad" value="deberes">Adelantar deberes
+            </label>
+            <label for="entrenar">
+              <input id="entrenar" type="checkbox" name="actividad" value="entrenar">Entrenar quidditch
+            </label>
+            <label for="descansar">
+              <input id="descansar" type="checkbox" name="actividad" value="descansar">Descansar en la Sala Común
+            </label>
+            <label for="secretos">
+              <input id="secretos" type="checkbox" name="actividad" value="secretos">Buscar secretos en Hogwarts
+            </label>
+          </div>  
+        </fieldset>
+
+        <fieldset class="trabajos">
+          <p>¿Qué trabajo te gustaría desempeñar?</p>
+          <label for="trabajos">
+            <select id="trabajos" name="trabajos">
+              <option value="">(elije uno)</option>
+              <option value="auror">Auror</option>
+              <option value="alquimista">Alquimista</option>
+              <option value="fabricante">Fabricante artículos mágicos</option>
+              <option value="herbologista">Herbologista</option>
+              <option value="profesor">Profesor</option>
+              <option value="quidditch">Jugador/Arbitro quidditch</option>
+              <option value="muggles">Relaciones muggles</option>
+              <option value="maldiciones">Rompedor de Maldiciones</option>
+              <option value="sanador">Sanador</option>
+              <option value="otro">Otro</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="bio">
+          <label for="bio"><span>¿Por qué quieres venir a Hogwarts?</span>
+            <textarea id="bio" name="bio" rows="5" cols="30"
+              placeholder="Me gustaría estudiar en Hogwarts porque..."></textarea>
+          </label>
+        </fieldset>
+
+        <button type="submit" value="Enviar"><span>Enviar</span></button>
+
+      </form> 
+    </div>
+
+  </div>
+
+  <footer id="footer">
+    <div class="footerarriba">
+      <section class="ayuda">
+        <p>¿Necesitas ayuda?</p>
+        <!--
+        <p><a href="#">Material Escolar</a></p>
+        <p><a href="#">Información sobre los cursos</a></p>
+        <p><a href="#">Sobre la vida en Hogwarts</a></p>
+        <p><a href="#">Reunión con los padres/tutores</a></p>
+        -->
+      </section>
+      <section class="contacta">
+        <p>Contáctanos</p>
+        <!--
+        <p>Alumn@s: <a href="#">alumnos@hogwarts.gbr</a></p>
+        <p>No alumn@s: <a href="#">informacion@hogwarts.gbr</a></p>
+        <p>Trabaja aquí: <a href="#">empleo@hogwarts.gbr</a></p>
+        -->
+      </section>
+      <section class="legal">
+        <p>Términos Legales</p>
+        <!--
+        <p><a href="#">Información Legal</a></p>
+        <p>Información recogida de: <a href="#https://harrypotter.fandom.com/es/wiki/HarryPotter_Wiki"
+            target="_blank">HarryPotter.fandom.com</a></p>
+        -->
+      </section>
+    </div>
+    <a href="#arriba">
+      <div class="footerultimo">
+        <p>HOGWARTS</p>
+      </div>
+    </a>
+  </footer>
+
+</body>
+
+
